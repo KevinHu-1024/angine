@@ -2,6 +2,7 @@
   "name": "angine",
   "version": "0.0.0",
   "license": "MIT",
+  "description": "AngularX UI components which is an implement of Ant Design",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
