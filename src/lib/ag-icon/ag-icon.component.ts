@@ -4,8 +4,8 @@ const libPrefix = 'ant';
 const classPrefix = `${libPrefix}icon`;
 
 interface Style {
-  fontSize: number;
-  color: string;
+  fontSize: number | undefined;
+  color: string | undefined;
 }
 
 @Component({
@@ -16,7 +16,7 @@ interface Style {
 export class AgIconComponent implements OnInit {
   @Input() type: string;
   @Input() spin: boolean;
-  @Input() style: Style;
+  @Input() style: Style | undefined;
   classNames: {};
   styles: {};
 
@@ -37,8 +37,8 @@ export class AgIconComponent implements OnInit {
 
   private setStyles() {
     this.styles = {
-      'font-size': this.style.fontSize && `${this.style.fontSize}px`,
-      'color': this.style.color,
+      'font-size': this.style && this.style.fontSize && `${this.style.fontSize}px`,
+      'color': this.style && this.style.color,
     };
   }
 }

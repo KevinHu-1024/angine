@@ -3,5 +3,9 @@
   [ngClass]="classNames"
   [disabled]="disabled"
 >
-  <span><ng-content></ng-content></span>
+  <span>
+    <ag-icon *ngIf="icon && !loading" [type]="icon"></ag-icon>
+    <ag-icon *ngIf="loading" type="loading" [spin]="true"></ag-icon>
+    <ng-content></ng-content>
+  </span>
 </button>

@@ -16,10 +16,7 @@ export class AgButtonComponent implements OnInit {
   @Input() htmlType: 'submit' | 'button' | 'reset' | 'menu';
   @Input() shape: string;
   @Input() loading: boolean;
-
   @Input() icon: string;
-  @Input() autofocus: boolean;
-  @Input() nativeType: 'button' | 'submit' | 'reset';
   classNames: {};
 
   constructor() { }

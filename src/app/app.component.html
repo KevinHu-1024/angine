@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div>
   <h1>
     Welcome to {{title}}!
   </h1>
@@ -24,12 +24,29 @@
     <ag-button size="small">Small</ag-button>
     <ag-button size="default">Default</ag-button>
   </div>
+  <div>
+    <p>加载中状态</p>
+    <ag-button type="primary" [loading]="true">Primary</ag-button>
+  </div>
+  <div>
+    <p>图标按钮</p>
+    <ag-button type="primary" shape="circle" icon="search"></ag-button>
+    <ag-button type="primary" icon="search">Search</ag-button>
+    <ag-button shape="circle" icon="search"></ag-button>
+    <ag-button icon="search">Search</ag-button>
+  </div>
   <div style="background:lightgrey;">
     <p>幽灵按钮</p>
     <ag-button type="primary" [ghost]="true">Primary</ag-button>
     <ag-button [ghost]="true">Default</ag-button>
     <ag-button type="dashed" [ghost]="true">Dashed</ag-button>
     <ag-button type="danger" [ghost]="true">Danger</ag-button>
+  </div>
+  <div>
+    <p>按钮组合</p>
+  </div>
+  <div>
+    <p>多个按钮组合</p>
   </div>
   <h2>图标</h2>
   <div>
