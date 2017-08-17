@@ -2,6 +2,7 @@
   [type]="htmlType || 'button'"
   [ngClass]="classNames"
   [disabled]="disabled"
+  (click)="handleClick()"
 >
   <span>
     <ag-icon *ngIf="icon && !loading" [type]="icon"></ag-icon>
