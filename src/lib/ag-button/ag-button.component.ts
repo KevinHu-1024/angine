@@ -80,7 +80,6 @@ export class AgButtonGroupComponent implements AfterViewInit {
   private buttons: AgButtonComponent;
 
   ngAfterViewInit() {
-    console.log('!', this.buttons);
     this.buttons.classNames[`${classPrefix}-group`] = true;
   }
 }
